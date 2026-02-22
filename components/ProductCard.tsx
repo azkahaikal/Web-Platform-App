@@ -38,7 +38,6 @@ export default function ProductCard({ product, badge }: Props) {
 
   const handleAdd = (e: React.MouseEvent) => {
     e.preventDefault();
-    // Cast product ke CartItem karena strukturnya kompatibel
     addToCart(product as unknown as CartItem);
   };
 
